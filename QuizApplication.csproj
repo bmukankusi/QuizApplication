@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\game.jpg" />
+    <None Remove="Images\laptop.jpg" />
+    <None Remove="Images\math.jpg" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\game.jpg" />
+    <Resource Include="Images\laptop.jpg" />
+    <Resource Include="Images\math.jpg" />
+  </ItemGroup>
+
+</Project>
