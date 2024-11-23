@@ -14,7 +14,7 @@ namespace QuizApplication
       /// </summary>
 
     {
-        private Dictionary<string, List<Question>> quizzes;
+        private Dictionary<string, List<Question>> quizzes = new Dictionary<string, List<Question>>();
         private List<Question>? currentQuizQuestions; 
         private int currentQuestionIndex = 0;
         private int correctAnswers = 0;
@@ -58,8 +58,19 @@ namespace QuizApplication
 
         public class Question
         {
+            /// <summary>
+            /// Represents the text of the question.
+            /// </summary>
             public string QuestionText { get; set; } = string.Empty;
+
+            /// <summary>
+            /// Represents the options for the question.
+            /// </summary>
             public List<string> Options { get; set; } = new List<string>();
+
+            /// <summary>
+            /// Represents the index of the correct answer in the options list.
+            /// </summary>
             public int CorrectAnswerIndex { get; set; }
         }
 

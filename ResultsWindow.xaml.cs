@@ -1,16 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace QuizApplication
 {
@@ -24,8 +16,16 @@ namespace QuizApplication
     {
         private MainWindow _mainWindow;
 
+        /// <summary>
+        /// Gets a value indicating whether the quiz should be retaken.
+        /// </summary>
         public bool RetakeQuiz { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ResultsWindow"/> class.
+        /// </summary>
+        /// <param name="resultsMessage">The message displaying the results of the quiz.</param>
+        /// <param name="mainWindow">The main window instance to return to.</param>
         public ResultsWindow(string resultsMessage, MainWindow mainWindow)
         {
             InitializeComponent();

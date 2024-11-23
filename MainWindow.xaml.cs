@@ -9,6 +9,9 @@ namespace QuizApplication
 {
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -19,7 +22,6 @@ namespace QuizApplication
         /// </summary>
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">The event data.</param>
-
         private void ProgrammingQuiz_Click(object sender, RoutedEventArgs e)
         {
             QuizWindow quizWindow = new QuizWindow("Programming in C#");
@@ -32,7 +34,6 @@ namespace QuizApplication
         /// </summary>
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">The event data.</param>
-
         private void MathQuiz_Click(object sender, RoutedEventArgs e)
         {
             QuizWindow quizWindow = new QuizWindow("Math_Linear Algebra");
@@ -45,7 +46,6 @@ namespace QuizApplication
         /// </summary>
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">The event data.</param>
-
         private void GamesQuiz_Click(object sender, RoutedEventArgs e)
         {
             QuizWindow quizWindow = new QuizWindow("Games");
